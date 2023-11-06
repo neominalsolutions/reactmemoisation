@@ -1,26 +1,36 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// aynı dosya uzantısından birden fazla dosyayı import etme şeklimiz
+import { Route, Routes } from 'react-router-dom';
+import UseStateSample from './01_useState/UseStateSample';
 
+// App dosyasının uygulamanın routing dosyası olarak kullanıyoruz.
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes>
+				<Route
+					path=""
+					element={
+						<>
+							<h1>Anasayfa</h1>
+						</>
+					}
+				></Route>
+				<Route
+					path="/about"
+					element={
+						<>
+							<p>About</p>
+						</>
+					}
+				></Route>
+				<Route path="/contact" element={<>Contact</>}></Route>
+				<Route path='/useState' Component={UseStateSample}></Route>
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
