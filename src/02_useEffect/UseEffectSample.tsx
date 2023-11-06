@@ -1,4 +1,7 @@
+import axios from 'axios';
 import { useEffect, useRef, useState } from 'react';
+import { getTodos } from '../api/todos.api';
+import { Todo } from '../api/todos.model';
 
 // /useEffect route
 function UseEffectSample() {
@@ -20,6 +23,9 @@ function UseEffectSample() {
 	useEffect(() => {
 		//ComponentDidMount
 		console.log('sayfa doma ilk kez basıldı');
+
+		// javascript fetchAPI
+		// axios kütüphanesi
 	}, []); // [state1,state2,state3] yukarıdaki kod blogunda her hangi bir state takibi yok. 1 kereye mahsus component doma girdiğinde çalışır.
 	// apidan veri çekip component açılışında ekrana basma işlemleri yapıcaz.
 
