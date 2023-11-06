@@ -16,6 +16,9 @@ import { Todo } from './todos.model';
 // 	completed: boolean;
 // }
 
-export const getTodos = () => {
-	return axios.get<Todo[]>('https://jsonplaceholder.typicode.com/todos');
+export const getTodos = ({ signal }: any) => {
+	return axios.get<Todo[]>(
+		'https://jsonplaceholder.typicode.com/todos',
+		signal
+	);
 };
