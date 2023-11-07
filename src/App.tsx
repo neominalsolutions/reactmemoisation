@@ -10,6 +10,7 @@ import AsyncAwaitSample from './02_useEffect/AsyncAwaitSample';
 import PromiseSample from './02_useEffect/PromiseSample';
 import FakeLogin from './08_customHook/FakeLogin';
 import CustomHookSample from './08_customHook/CustomHookSample';
+import UseReducerSample from './09_useReducer/UseReducerSample';
 //import Layout from './layouts/Layout';
 // import ReactMemoSample from './03_reactMemo/ReactMemoSample';
 // import UseRefSample from './04_useRef/UseRefSample';
@@ -51,6 +52,7 @@ function App() {
 					<Route path="debouncing" Component={DebouncingSample}></Route>
 					<Route path="fakeLogin" Component={FakeLogin}></Route>
 					<Route path="customHook" Component={CustomHookSample}></Route>
+					<Route path="useReducer" Component={UseReducerSample}></Route>
 				</Route>
 				<Route
 					path="admin"
