@@ -9,6 +9,7 @@ import TodosSample from './02_useEffect/TodosSample';
 import AsyncAwaitSample from './02_useEffect/AsyncAwaitSample';
 import PromiseSample from './02_useEffect/PromiseSample';
 import Layout from './layouts/Layout';
+import ReactMemoSample from './03_reactMemo/ReactMemoSample';
 
 // App dosyasının uygulamanın routing dosyası olarak kullanıyoruz.
 function App() {
@@ -20,6 +21,7 @@ function App() {
 					<Route path="useEffect" Component={UseEffectSample}></Route>
 					<Route path="todos" Component={TodosSample}></Route>
 					<Route path="asyncawait" Component={AsyncAwaitSample}></Route>
+					<Route path="reactMemo" Component={ReactMemoSample}></Route>
 				</Route>
 				<Route
 					path="admin"
