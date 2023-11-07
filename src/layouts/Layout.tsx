@@ -11,7 +11,8 @@ function Layout() {
 				<Link to="/reactMemo">React Memo</Link>{' '}
 				<Link to="/useRef">useRef Hook</Link>{' '}
 				<Link to="/useMemo">useMemo Hook</Link>{' '}
-				<Link to="/useCallBack">UseCallback Hook</Link>
+				<Link to="/useCallBack">UseCallback Hook</Link>{' '}
+				<Link to="/debouncing">Debouncing Sample</Link>
 			</nav>
 			<main>
 				{/* UseStateSample dynamic component içerisine girer çıkar */}

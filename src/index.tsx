@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -12,8 +12,11 @@ root.render(
 	<>
 		{/* Root component */}
 		<BrowserRouter>
-			{/* Child Component */}
-			<App />
+			{/* react lazy kullanınca js dosyaları sayfa asenkron yükleniyor. ui da sayfalar arası asenkron geç,iş sağlayabilmek için bütün uygulamayı suspense elementi ile sarmallamamız gerekiyor */}
+			<Suspense fallback={<>... loading</>}>
+				{/* Child Component */}
+				<App />
+			</Suspense>
 		</BrowserRouter>
 	</>
 );
