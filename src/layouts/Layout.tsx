@@ -15,6 +15,7 @@ function Layout() {
 				<Link to="/debouncing">Debouncing Sample</Link>{' '}
 				<Link to="/fakeLogin">Fake Login</Link>{' '}
 				<Link to="/useReducer">Use Reducer</Link>{' '}
+				<Link to="/useContext">Use Context Sample</Link>{' '}
 			</nav>
 			<main>
 				{/* UseStateSample dynamic component içerisine girer çıkar */}

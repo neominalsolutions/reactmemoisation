@@ -11,6 +11,8 @@ import PromiseSample from './02_useEffect/PromiseSample';
 import FakeLogin from './08_customHook/FakeLogin';
 import CustomHookSample from './08_customHook/CustomHookSample';
 import UseReducerSample from './09_useReducer/UseReducerSample';
+import UseContextSample from './10_useContext/UseContextSample';
+import CartSummary from './10_useContext/CartSummary';
 //import Layout from './layouts/Layout';
 // import ReactMemoSample from './03_reactMemo/ReactMemoSample';
 // import UseRefSample from './04_useRef/UseRefSample';
@@ -53,6 +55,8 @@ function App() {
 					<Route path="fakeLogin" Component={FakeLogin}></Route>
 					<Route path="customHook" Component={CustomHookSample}></Route>
 					<Route path="useReducer" Component={UseReducerSample}></Route>
+					<Route path="useContext" Component={UseContextSample}></Route>
+					<Route path="cartSummary" Component={CartSummary}></Route>
 				</Route>
 				<Route
 					path="admin"

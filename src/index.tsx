@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import CartProvider from './10_useContext/CartProvider';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
@@ -12,11 +13,14 @@ root.render(
 	<>
 		{/* Root component */}
 		<BrowserRouter>
-			{/* react lazy kullanınca js dosyaları sayfa asenkron yükleniyor. ui da sayfalar arası asenkron geç,iş sağlayabilmek için bütün uygulamayı suspense elementi ile sarmallamamız gerekiyor */}
-			<Suspense fallback={<>... loading</>}>
-				{/* Child Component */}
-				<App />
-			</Suspense>
+			{/* tüm sayfalardan cart provider içerisinde cartItems state erişebilirim. */}
+			<CartProvider>
+				{/* react lazy kullanınca js dosyaları sayfa asenkron yükleniyor. ui da sayfalar arası asenkron geç,iş sağlayabilmek için bütün uygulamayı suspense elementi ile sarmallamamız gerekiyor */}
+				<Suspense fallback={<>... loading</>}>
+					{/* Child Component */}
+					<App />
+				</Suspense>
+			</CartProvider>
 		</BrowserRouter>
 	</>
 );
