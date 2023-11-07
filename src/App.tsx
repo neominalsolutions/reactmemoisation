@@ -11,6 +11,7 @@ import PromiseSample from './02_useEffect/PromiseSample';
 import Layout from './layouts/Layout';
 import ReactMemoSample from './03_reactMemo/ReactMemoSample';
 import UseRefSample from './04_useRef/UseRefSample';
+import UseMemoSample from './05_useMemo/UseMemoSample';
 
 // App dosyasının uygulamanın routing dosyası olarak kullanıyoruz.
 function App() {
@@ -24,6 +25,7 @@ function App() {
 					<Route path="asyncawait" Component={AsyncAwaitSample}></Route>
 					<Route path="reactMemo" Component={ReactMemoSample}></Route>
 					<Route path="useRef" Component={UseRefSample}></Route>
+					<Route path="useMemo" Component={UseMemoSample}></Route>
 				</Route>
 				<Route
 					path="admin"

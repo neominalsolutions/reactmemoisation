@@ -9,7 +9,8 @@ function Layout() {
 				<Link to="/todos">Todos Sample</Link>{' '}
 				<Link to="/asyncawait">Async Await Sample</Link>{' '}
 				<Link to="/reactMemo">React Memo</Link>{' '}
-				<Link to="/useRef">useRef Hook</Link>
+				<Link to="/useRef">useRef Hook</Link>{' '}
+				<Link to="/useMemo">useMemo Hook</Link>
 			</nav>
 			<main>
 				{/* UseStateSample dynamic component içerisine girer çıkar */}
